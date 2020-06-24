@@ -1,0 +1,8 @@
+README.md
+setup.py
+reqcache/__init__.py
+reqcache/reqcache.py
+reqcache_classAndrew.egg-info/PKG-INFO
+reqcache_classAndrew.egg-info/SOURCES.txt
+reqcache_classAndrew.egg-info/dependency_links.txt
+reqcache_classAndrew.egg-info/top_level.txt
