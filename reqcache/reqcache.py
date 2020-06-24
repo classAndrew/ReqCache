@@ -1,11 +1,10 @@
 import requests
 import time
-reqmap = {}
+from . import reqmap, CLEAR_TIME
 def get(url: str) -> requests.Response:
     cached_req = reqmap.get(url, 0)
-    if not cached_req:
+    if not cached_req or time.time() - cached_req[1]> CLEAR_TIME:
         r = requests.get(url)
-        reqmap.update({url: r})
+        reqmap.update({url: (r, time.time())})
         return r
-    print("Already Sent")
-    return cached_req
+    return cached_req[0]
