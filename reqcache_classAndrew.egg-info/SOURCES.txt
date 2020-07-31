@@ -1,6 +1,7 @@
 README.md
 setup.py
 reqcache/__init__.py
+reqcache/areq.py
 reqcache/reqcache.py
 reqcache_classAndrew.egg-info/PKG-INFO
 reqcache_classAndrew.egg-info/SOURCES.txt
